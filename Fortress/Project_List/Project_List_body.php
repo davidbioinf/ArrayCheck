@@ -23,7 +23,7 @@ class Project_List extends SpecialPage {
     global $wgOut,$wgServer;
     
     $wikiText="{{Pagination_Library}}
-= All Projects =
+= All Runs =
 <html>
 <div id=page_number_holder></div>
 <div id=log_messages>

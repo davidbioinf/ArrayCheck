@@ -28,7 +28,7 @@ var int=self.setInterval(\"displayOutput(0,'/w/index.php/Template:Experiments',0
 displayOutput(0,'/w/index.php/Template:Experiments',0,'".$this->writeAccessGroups()."');
 </script>
 </html>
-= All Experiments =
+= Image Stream =
 <div id=page_number_holder></div>
 <div id=log_messages><html>
 <img src=\"/w/skins/gmwfreeblue/images/loading.gif\"/>
@@ -37,7 +37,6 @@ displayOutput(0,'/w/index.php/Template:Experiments',0,'".$this->writeAccessGroup
 {| {{#input:type=hidden|id=tablepage|value=0}}
 |}
 {{#formend:}}
-<html><a href='$wgServer/w/index.php/Special:AddForm?action=AddExperiment'>Add an Experiment!</a></html>
 ";
 
     $wgOut->addWikiText($wikiText);
