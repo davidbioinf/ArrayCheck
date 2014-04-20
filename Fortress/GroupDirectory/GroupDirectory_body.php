@@ -20,7 +20,7 @@ class GroupDirectory extends SpecialPage {
        $gid="*";
     }
     if(trim($gid) == ""){
-      $wikiText="<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@distributedbio.com for directory read privileges!</font></html>";
+      $wikiText="<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@.com for directory read privileges!</font></html>";
     }else{
     if($wgRequest->getVal("type") == "experiment"){
       list($project,$experiment)=array($wgRequest->getVal("p"),$wgRequest->getVal("e"));
@@ -37,7 +37,7 @@ class GroupDirectory extends SpecialPage {
         $wikiText.="|-\n|}";
 
         }else{
-           $wikiText.="<br><br><font color=red>It seems this directory is either empty or you do not have the correct permissions to access files at this location. Please contact david@distributedbio.com for permission managements.</font>";
+           $wikiText.="<br><br><font color=red>It seems this directory is either empty or you do not have the correct permissions to access files at this location. Please contact david@.com for permission managements.</font>";
         }
       
       $wgOut->addWikiText("<br>\n==Analysis Files:==\n*Project: $project<br>\n*Experiment: $experiment<br>\n*User: $user<br><br>");
@@ -56,7 +56,7 @@ class GroupDirectory extends SpecialPage {
 
         $wikiText.="|-\n|}";      
         }else{
-           $wikiText.="<br><br><font color=red>It seems this directory is either empty or you do not have the correct permissions to access files at this location. Please contact david@distributedbio.com for permission managements.</font>";
+           $wikiText.="<br><br><font color=red>It seems this directory is either empty or you do not have the correct permissions to access files at this location. Please contact david@.com for permission managements.</font>";
         }
       }
     }
@@ -75,7 +75,7 @@ class GroupDirectory extends SpecialPage {
        $gid="*";
     }
     if($gid == ""){
-      $wikiText="<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@distributedbio.com for directory read privileges!</font></html>";
+      $wikiText="<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@.com for directory read privileges!</font></html>";
     }else{
     if($wgRequest->getVal("type") == "experiment"){
      list($file,$project,$experiment)=array($wgRequest->getVal("file"),$wgRequest->getVal("p"),$wgRequest->getVal("e"));
@@ -104,7 +104,7 @@ class GroupDirectory extends SpecialPage {
       $wgOut->addWikiText("You do no have permissions to download this file");
     }
    }else{
-     $wgOut->addWikiText("<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@distributedbio.com for directory read privileges!</font></html>");
+     $wgOut->addWikiText("<html><font color=red>Your username  doesn't seem to have directory accessible permissions, please contact david@.com for directory read privileges!</font></html>");
    }
    }
   }
